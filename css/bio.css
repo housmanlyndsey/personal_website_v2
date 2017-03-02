@@ -1,0 +1,116 @@
+.aboutme{
+	text-align: center;
+	margin-bottom: 0.5em;
+}
+
+
+/*hobbies*/
+#grey{
+	background-color: #F5F5F5;
+}
+#hobbies{
+	padding-top: 2%;
+}
+#hobbies .fa-stack{
+	float: left;
+}
+#hobbies p{
+	font-size: 1em;
+}
+#hobbies h4{
+	color: #1ABC9C;
+}
+#hobbies .fa-stack-1x{
+	color: #1ABC9C;
+}
+
+/*map*/
+#chartdiv {
+	width	: 100%;
+	height	: 500px;
+}
+
+.map-marker {
+    /* adjusting for the marker dimensions 
+    so that it is centered on coordinates */
+    margin-left: -8px;
+    margin-top: -8px;
+}
+.map-marker.map-clickable {
+    cursor: pointer;
+}
+.pulse {
+		width: 10px;
+		height: 10px;
+		border: 5px solid #f7f14c;
+		-webkit-border-radius: 30px;
+		-moz-border-radius: 30px;
+		border-radius: 30px;
+		background-color: #716f42;
+		z-index: 10;
+		position: absolute;
+	}
+.map-marker .dot {
+		border: 10px solid #fff601;
+		background: transparent;
+		-webkit-border-radius: 60px;
+		-moz-border-radius: 60px;
+		border-radius: 60px;
+		height: 50px;
+		width: 50px;
+		-webkit-animation: pulse 3s ease-out;
+		-moz-animation: pulse 3s ease-out;
+		animation: pulse 3s ease-out;
+		-webkit-animation-iteration-count: infinite;
+		-moz-animation-iteration-count: infinite;
+		animation-iteration-count: infinite;
+		position: absolute;
+		top: -25px;
+		left: -25px;
+		z-index: 1;
+		opacity: 0;
+	}
+	@-moz-keyframes pulse {
+	 0% {
+	   	-moz-transform: scale(0);
+	   	opacity: 0.0;
+	 }
+	 25% {
+	   	-moz-transform: scale(0);
+	   	opacity: 0.1;
+	 }
+	 50% {
+	   	-moz-transform: scale(0.1);
+	   	opacity: 0.3;
+	 }
+	 75% {
+	   	-moz-transform: scale(0.5);
+	   	opacity: 0.5;
+	 }
+	 100% {
+	   	-moz-transform: scale(1);
+	   	opacity: 0.0;
+	 }
+	}
+	@-webkit-keyframes "pulse" {
+	 0% {
+	    -webkit-transform: scale(0);
+	   	opacity: 0.0;
+	 }
+	 25% {
+	    -webkit-transform: scale(0);
+	   	opacity: 0.1;
+	 }
+	 50% {
+	    -webkit-transform: scale(0.1);
+	   	opacity: 0.3;
+	 }
+	 75% {
+	    -webkit-transform: scale(0.5);
+	   	opacity: 0.5;
+	 }
+	 100% {
+	    -webkit-transform: scale(1);
+	   	opacity: 0.0;
+	 }
+	}			
